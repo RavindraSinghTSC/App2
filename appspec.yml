@@ -1,0 +1,9 @@
+version: 0.0
+os: windows
+files:
+  - source: \
+    destination: C:\inetpub\wwwroot\App2
+hooks:
+  BeforeInstall:
+    - location: \CodeDeploy\before-install.bat
+      timeout: 900
